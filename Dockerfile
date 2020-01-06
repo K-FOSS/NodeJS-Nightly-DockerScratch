@@ -1,4 +1,4 @@
-FROM alpine:3.11
+FROM alpine:3.11 as builder
 
 ENV CONFIG_FLAGS='--fully-static --without-etw --without-npm --without-inspector --without-dtrace --without-intl --enable-lto'
 
